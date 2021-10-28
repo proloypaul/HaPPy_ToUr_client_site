@@ -4,7 +4,7 @@ import "./Header.css";
 
 const Header = () => {
     return (
-        <div>
+        <div className="added-banner">
             <nav className="navbar">
                 <div className="nav-logo">
 
@@ -15,6 +15,13 @@ const Header = () => {
                     <NavLink to="/login">Login</NavLink>
                 </div>
             </nav>
+            <div className="banner-section">
+                <div>
+                    <h1>Search to find your tour</h1>
+                    <input type="text" placeholder="type here" />
+                    <button>Search</button>
+                </div>
+            </div>
         </div>
     );
 };

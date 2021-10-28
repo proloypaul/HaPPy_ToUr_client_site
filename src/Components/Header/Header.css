@@ -1,3 +1,10 @@
+.added-banner{
+    background-image:  url('../../images/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    margin: 0;
+}
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -5,4 +12,10 @@
 .nav-section a{
     text-decoration: none;
     margin-right:10px; 
+}
+.added-banner .banner-section{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 80px;
 }
