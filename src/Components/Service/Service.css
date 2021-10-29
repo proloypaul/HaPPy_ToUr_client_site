@@ -1,7 +1,7 @@
 .service-container{
     width: 200px;
     text-align: center;
-    border: 2px solid black;
+
 }
 .service h2{
     font-size: 20px;
@@ -13,6 +13,7 @@
     padding: 5px 20px;
     border: 0;
     border-radius: 5px;
+    margin-top: 10px;
 }
 .service img{
     width: 200px;
