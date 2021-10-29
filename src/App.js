@@ -2,6 +2,7 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import AuthProvider from './Components/Context/AuthProvider';
+import PrivateRoute from './Components/Context/PrivateRoute';
 import Footer from './Components/Footer/Footer';
 import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
@@ -29,9 +30,9 @@ function App() {
           <Route path="/login">
             <Login></Login>
           </Route>
-          <Route path="/serviceDetails/:id">
+          <PrivateRoute path="/serviceDetails/:id">
             <ServiceDetails></ServiceDetails>
-          </Route>
+          </PrivateRoute>
           <Route path="*">
             <NotFind></NotFind>
           </Route>

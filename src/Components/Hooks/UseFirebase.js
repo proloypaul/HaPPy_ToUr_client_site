@@ -6,37 +6,52 @@ initializetion()
 const UseFirebase = () => {
     const [user, setUser] = useState({})
     const [error, setError] = useState('')
+    const [isLoading , setIsLoading] = useState(true)
     const auth = getAuth()
-    const googleProvider = new GoogleAuthProvider()
 
     // sign in with google 
     const signInWithGoogle = () => {
+        setIsLoading(true)
+        const googleProvider = new GoogleAuthProvider()
         signInWithPopup(auth, googleProvider)
             .then(result => {
                 const user = result.user
                 setUser(user)
                 // console.log(user)
-            }).catch(error => {
-                // console.log(error.message)
-                setError(error.message)
+                setError('')
             })
+            .finally(() => setIsLoading(false))
+            // .catch(error => {
+            //     // console.log(error.message)
+            //     setError(error.message)
+            // })
     }
 
     // sign in and sign up state change
     useEffect(() => {
-        onAuthStateChanged(auth, (user) => {
-            setUser(user)
-
-        })
+        const unsubscribed = onAuthStateChanged(auth, (user) => {
+            if(user){
+                setUser(user)
+            }else{
+                setUser({})
+            };
+            setIsLoading(false)
+        });
+        return () => unsubscribed;
     }, [])
 
+    // signOut process 
     const signOutProcess = () => {
+        setIsLoading(true)
         signOut(auth)
             .then(() => {
                 setUser({})
-            }).catch(error => {
-                setError(error.message)
             })
+            .finally(() => setIsLoading(false))
+            
+            // .catch(error => {
+            //     setError(error.message)
+            // })
 
     }
 
@@ -44,6 +59,7 @@ const UseFirebase = () => {
     return{
         user,
         error,
+        isLoading,
         signInWithGoogle,
         signOutProcess
     }
