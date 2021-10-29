@@ -1,0 +1,15 @@
+.added-banner{
+    background-image:  url('../../images/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.added-banner .banner-section{
+    /* display: flex;
+    justify-content: center; */
+    text-align: center;
+}
