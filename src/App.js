@@ -6,6 +6,7 @@ import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
 import Login from './Components/Login/Login';
 import NotFind from './Components/NotFind/NotFind';
+import ServiceDetails from './Components/ServiceDetails/ServiceDetails';
 import Services from './Components/Services/Services';
 
 function App() {
@@ -25,6 +26,9 @@ function App() {
         </Route>
         <Route path="/login">
           <Login></Login>
+        </Route>
+        <Route path="/serviceDetails/:id">
+          <ServiceDetails></ServiceDetails>
         </Route>
         <Route path="*">
           <NotFind></NotFind>

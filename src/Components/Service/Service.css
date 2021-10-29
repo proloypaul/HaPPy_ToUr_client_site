@@ -1,0 +1,22 @@
+.service-container{
+    width: 200px;
+    text-align: center;
+    border: 2px solid black;
+}
+.service h2{
+    font-size: 20px;
+    font-weight: 300;
+}
+.service button{
+    background-color: black;
+    color: white;
+    padding: 5px 20px;
+    border: 0;
+    border-radius: 5px;
+}
+.service img{
+    width: 200px;
+    height: 250px;
+    border: 0;
+    border-radius: 10px;
+}
