@@ -1,10 +1,10 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import UseFirebase from '../Hooks/UseFirebase';
+import useAuth from '../Context/useAuth';
 import "./Header.css";
 
 const Header = () => {
-    const {user, signOutProcess} = UseFirebase()
+    const {user, signOutProcess} = useAuth()
     return (
         <div>
             <nav className="navbar">

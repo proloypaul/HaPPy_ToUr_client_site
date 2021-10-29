@@ -11,7 +11,7 @@ const ServiceDetails = () => {
     const [service, setService] = useState({})
 
     useEffect(() => {
-        const url = `http://localhost:4000/services/${id}`
+        const url = `https://gentle-river-15524.herokuapp.com/services/${id}`
         fetch(url)
             .then(res => res.json())
             .then(data => {
