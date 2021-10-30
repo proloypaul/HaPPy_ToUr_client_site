@@ -4,7 +4,7 @@ import './ManageOrder.css'
 const ManageOrder = () => {
     const [users, setUsers] = useState([])
     useEffect(() => {
-        const url = `http://localhost:4000/usersorder`
+        const url = `https://gentle-river-15524.herokuapp.com/usersorder`
         fetch(url)
             .then(res => res.json())
             .then(date => {
@@ -18,7 +18,7 @@ const ManageOrder = () => {
         const isDelete = window.confirm("are you would like to delete this user?")
 
         if(isDelete){
-            const url = `http://localhost:4000/usersorder/${id}`
+            const url = `https://gentle-river-15524.herokuapp.com/usersorder/${id}`
             fetch(url, {
                 method:'DELETE'
             })

@@ -28,7 +28,7 @@ const OrderForm = () => {
         };
         // console.log(userOrder)
 
-        const url = `http://localhost:4000/usersorder`
+        const url = `https://gentle-river-15524.herokuapp.com/usersorder`
         fetch(url, {
             method: 'POST',
             headers: {
