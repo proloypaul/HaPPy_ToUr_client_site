@@ -37,14 +37,14 @@ const ManageOrder = () => {
     }
     return (
         <div className="container">
-            <h1>Manage order section</h1>
+            <h1>Manage All order </h1>
             <div className="my-5">
                 <div className="manage-title">
                     <h3>Name</h3>
                     <h3>Email</h3>
                     <h3>Order</h3>
                     <h3>Date</h3>
-                    <h3>Delete Option</h3>
+                    <h3>Delete</h3>
                 </div>
                 <div>
                     {users.map(user => <div key={user._id} className="manage-order">
@@ -52,7 +52,7 @@ const ManageOrder = () => {
                         <p>{user.email}</p>
                         <p>{user.orderItem}</p>
                         <p>{user.date}</p>
-                        <p><button onClick={() => handleDelete(user._id)}>Delte</button></p>
+                        <p><button className="dltBtn" onClick={() => handleDelete(user._id)}><i className="far fa-trash-alt"></i></button></p>
                     </div>)}
                 </div>
             </div>

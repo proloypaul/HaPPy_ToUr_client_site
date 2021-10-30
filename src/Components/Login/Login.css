@@ -14,8 +14,13 @@
     font-weight: bold;
     padding: 20px 40px; 
     border: 1px solid whitesmoke;
+    border-radius: 5px;
 }
-i{
+.Login-container button :hover{
+    background-color: whitesmoke;
+    color: #1c1c1E;
+}
+.Login-container button i{
     font-size: 50px;
     color: white;
 }

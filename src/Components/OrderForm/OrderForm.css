@@ -8,10 +8,11 @@
     padding: 0px 5px;
 }
 .order-form .inputBtn{
-    background-color: black;
+    background-color: #1c1c1E;
     color: white;
-    font-weight: bold;
+    font-weight: 300;
     font-size: 20px;
     padding: 5px 0px;
+    border: 1px solid black;
     border-radius: 5px;
 }

@@ -7,10 +7,10 @@ const Login = () => {
     return (
         <div className="Login-container">
             <div className="">
-                <h1>Login section</h1>
+                <h1>Login Here</h1>
                 <div>
                     {<p>{error}</p>}
-                    <button onClick={signInWithGoogle}><i class="fab fa-google"></i>sign in</button>
+                    <button onClick={signInWithGoogle}><i className="fab fa-google"></i>sign in</button>
                 </div>
             </div>
         </div>

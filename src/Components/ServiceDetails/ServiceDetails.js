@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
-import { useState } from 'react/cjs/react.development';
+import { useState } from 'react';
 import './ServiceDetails.css';
 
 const ServiceDetails = () => {
@@ -38,3 +38,6 @@ const ServiceDetails = () => {
 };
 
 export default ServiceDetails;
+
+
+// Check the import of all your components. What to check? 1. Imported from useState and useEffect 'react'. Link, BrowserRouter from these 'react-router-dom'. If these are imported from any other mine, fix it
