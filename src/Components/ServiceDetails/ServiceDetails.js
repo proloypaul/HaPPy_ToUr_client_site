@@ -18,6 +18,7 @@ const ServiceDetails = () => {
                 setService(data)
             })
     }, [])
+
     
     return (
         <div className="container my-5">
