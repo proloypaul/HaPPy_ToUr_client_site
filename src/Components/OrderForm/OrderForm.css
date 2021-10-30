@@ -1,0 +1,17 @@
+.orderForm-container{
+    background: whitesmoke;
+    padding: 20px 20px;
+}
+.order-form input{
+    width: 50%;
+    margin: 10px 0px;
+    padding: 0px 5px;
+}
+.order-form .inputBtn{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px 0px;
+    border-radius: 5px;
+}

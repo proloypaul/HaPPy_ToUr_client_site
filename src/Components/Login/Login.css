@@ -1,0 +1,21 @@
+.Login-container{
+    background-color: #303032;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.Login-container button{
+    background-color: #1c1c1E;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 40px; 
+    border: 1px solid whitesmoke;
+}
+i{
+    font-size: 50px;
+    color: white;
+}

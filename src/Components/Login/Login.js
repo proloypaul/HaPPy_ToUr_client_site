@@ -1,14 +1,17 @@
 import React from 'react';
 import useAuth from '../Context/useAuth';
+import './Login.css'
 
 const Login = () => {
     const {signInWithGoogle, error} = useAuth()
     return (
-        <div>
-            <h1>Login section</h1>
-            <div>
-                {<p>{error}</p>}
-                <button onClick={signInWithGoogle}>Google sign in</button>
+        <div className="Login-container">
+            <div className="">
+                <h1>Login section</h1>
+                <div>
+                    {<p>{error}</p>}
+                    <button onClick={signInWithGoogle}><i class="fab fa-google"></i>sign in</button>
+                </div>
             </div>
         </div>
     );

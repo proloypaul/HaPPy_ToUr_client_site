@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import './OrderForm.css';
 
 const OrderForm = () => {
     const nameRef = useRef()
@@ -38,41 +39,42 @@ const OrderForm = () => {
             .then(res => res.json())
             .then(data => {
                 if(data.acknowledged){
-                    alert("submit successful✌✌✌")
+                    alert("Submit successful")
                     event.target.reset()
                 }else{
-                    alert("submit isn't successful")
+                    alert("Submit isn't successful")
                     
                 }
             })
     }
 
     return (
-        <div>
-            <form onSubmit={handleOrder}>
-                <div>
-                    <input ref={nameRef} type="text" placeholder="Give your name"/>
-                </div>
-                <div>
-                    <input ref={emailRef} type="email" placeholder="Email: abc@gmail.com"/>
-                </div>
-                <div>
-                    <input ref={phoneRef} type="number" placeholder="phone"/>
-                </div>
-                <div>
-                    <input ref={addressRef} type="text" placeholder="present address"/>
-                </div>
-                <div>
-                    <input ref={orderItemRef} type="text" placeholder="order Item : place, country"/>
-                </div>
-                <div>
-                    <input ref={dateRef} type="date"/>
-                </div>
-                <div>
-                    {/* <button type="button">Submit</button> */}
-                    <input type="submit" value="submit"/>
-                </div>
-            </form>
+        <div className="orderForm-container">
+            <div className="order-form">
+                <form onSubmit={handleOrder}>
+                    <div>
+                        <input ref={nameRef} type="text" placeholder="Give your name"/>
+                    </div>
+                    <div>
+                        <input ref={emailRef} type="email" placeholder="Email: abc@gmail.com"/>
+                    </div>
+                    <div>
+                        <input ref={phoneRef} type="number" placeholder="phone"/>
+                    </div>
+                    <div>
+                        <input ref={addressRef} type="text" placeholder="present address"/>
+                    </div>
+                    <div>
+                        <input ref={orderItemRef} type="text" placeholder="order Item : place, country"/>
+                    </div>
+                    <div>
+                        <input ref={dateRef} type="date"/>
+                    </div>
+                    <div>
+                        <input className="inputBtn" type="submit" value="Submit"/>
+                    </div>
+                </form>
+            </div>
         </div>
     );
 };
