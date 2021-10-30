@@ -6,8 +6,9 @@ const Banner = () => {
         <div  className="added-banner">
             <div className="banner-section">
                 <div>
-                    <h1>Search to find your tour</h1>
-                    <input type="text" placeholder="type here" />
+                    <p>Amazing Tours And Fun Adventures</p>
+                    <p><span>Waiting For You</span></p>
+                    <input type="text" placeholder="type tour place" />
                     <button>Search</button>
                 </div>
             </div>
