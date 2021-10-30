@@ -15,17 +15,25 @@ const ManageOrder = () => {
     // delete user from manage all user 
     const handleDelete = id => {
         // console.log(id)
-        const url = `http://localhost:4000/usersorder/${id}`
-        fetch(url, {
-            method:'DELETE'
-        })
-            .then(res => res.json())
-            .then(data => {
-                if(data.deletedCount > 0){
-                    alert("delete succesful")
-                }
-                
+        const isDelete = window.confirm("are you would like to delete this user?")
+
+        if(isDelete){
+            const url = `http://localhost:4000/usersorder/${id}`
+            fetch(url, {
+                method:'DELETE'
             })
+                .then(res => res.json())
+                .then(data => {
+                    if(data.deletedCount > 0){
+                        const withOutDeleteUsers = users.filter(user => user._id !== id)
+                        setUsers(withOutDeleteUsers)
+                        alert("delete succesful")
+                    }
+                    
+                })
+        }else{
+            alert("Okay user don't delete")
+        }
     }
     return (
         <div className="container">

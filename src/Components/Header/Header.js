@@ -14,7 +14,7 @@ const Header = () => {
                 <div className="nav-section">
                     <NavLink to="/home">Home</NavLink>
                     <NavLink to="/services">Tour Services</NavLink>
-                    <NavLink to="/manageAllOrder">Manage Orders</NavLink>
+                    <NavLink to="/manageAllOrder">ManageOrders</NavLink>
                     {user?.email ? <button onClick={signOutProcess}><NavLink to="/login">LogOut</NavLink></button> : <button><NavLink to="/login">Login</NavLink></button>}
                 </div>
             </nav>
