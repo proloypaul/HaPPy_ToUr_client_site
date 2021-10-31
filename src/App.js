@@ -8,6 +8,7 @@ import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
 import Login from './Components/Login/Login';
 import ManageOrder from './Components/Manageorder/ManageOrder';
+import MyOrder from './Components/MyOrder/MyOrder';
 import NotFind from './Components/NotFind/NotFind';
 import OrderForm from './Components/OrderForm/OrderForm';
 import ServiceDetails from './Components/ServiceDetails/ServiceDetails';
@@ -35,6 +36,9 @@ function App() {
           <PrivateRoute path="/serviceDetails/:id">
             <ServiceDetails></ServiceDetails>
           </PrivateRoute>
+          <Route path="/myorder">
+            <MyOrder></MyOrder>
+          </Route>
           <Route path="/manageAllOrder">
             <ManageOrder></ManageOrder>
           </Route>
