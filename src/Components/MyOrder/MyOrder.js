@@ -42,7 +42,7 @@ const MyOrder = () => {
     }
     return (
         <div className="container">
-            <h1>My Order section</h1>
+            <h1>Your Orders</h1>
             <div className="my-5">
                 <div className="manage-title">
                     <h3>Name</h3>
