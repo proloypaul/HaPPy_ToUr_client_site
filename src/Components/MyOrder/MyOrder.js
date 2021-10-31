@@ -61,12 +61,7 @@ const MyOrder = () => {
                     </div>)}
                 </div>
             </div>
-            {/* <div>
-                {onlyHisOrder.map(onlyUser => <div>
-
-                    
-                </div>)}
-            </div> */}
+            
             
         </div>
     );

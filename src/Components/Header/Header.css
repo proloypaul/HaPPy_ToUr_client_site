@@ -5,6 +5,23 @@
     display: flex;
     justify-content: space-between;
 }
+.navbar .nav-logo{
+    display: flex;
+    align-items: center;
+}
+.nav-logo img{
+    width: 50px;
+    background-color: white;
+    border: 0;
+    border-radius: 10px;
+}
+.navbar .nav-logo p{
+    color: #F7CAC9;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 10px;
+}
 .nav-section a{
     color: white;
     text-decoration: none;
