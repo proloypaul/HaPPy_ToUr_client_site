@@ -9,3 +9,6 @@
 4. My Order or ManageOrders section you can see when you login this website. Only Your all order store My Order section. You also can delete your order in My order section. ManageOrders section store all users order information Only admin can handle this section. Admin can delete any user from ManageOrders section
 
 5. Visit this Website link here [happy-tour-c4bbb.firebaseapp.com] 
+
+# Thank you for reading those description about this website
+
